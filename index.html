@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <title>Comment fonctionne Java ?</title>
+    <meta name="description" content="Comment fonctionne Java ?">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
+    <meta property="og:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use."> <!-- EDIT -->
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+  </head>
+  <body>
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1><strong>Chapitre 11</strong></h1>
+            <h2>Les dates</h2>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section>
+          <span data-step-count=3></span>
+          <header>
+            <h1 class="aligncenter"><strong>Les dates : Pas si facile !</strong></h1>
+          </header>
+          <div style="position: absolute; top: 300px; left: 500px" class="animate-show" data-step=1>
+            <img src="./static/images/dateNaif1.png" style="width: 600px;"/>
+          </div>
+          <div style="position: absolute; top: 300px; left: 500px" class="animate-show" data-step=2>
+            <img src="./static/images/dateNaif2.png" style="width: 600px;"/>
+          </div>
+          <div style="position: absolute; top: 300px; left: 500px" class="animate-show" data-step=3>
+            <img src="./static/images/dateNaif3.png" style="width: 600px;"/>
+          </div>
+        </section>
+
+        <section style="color: white; font-size: 25px;">
+          <span data-step-count=3></span>
+          <header>
+            <h1 class="aligncenter"><strong>UTC</strong></h1>
+          </header>
+          <div style="position: absolute; top: 300px; left: 400px;" class="animate-show" data-step=1>
+            <div><strong>Temps Coordonné Universel / Coordonated Universal Time</strong></div>
+          </div>
+          <div style="position: absolute; top: 400px; left: 550px;" class="animate-show" data-step=2>
+            <div><strong>2007-12-31 22:59:59.000 UTC</strong></div>
+          </div>
+          <div style="position: absolute; top: 500px; left: 500px;" class="animate-show" data-step=3>
+            <div><strong>23:59:59 en France en hiver (heure locale)</strong></div>
+          </div>
+        </section>
+
+        <section style="color: white; font-size: 25px;">
+          <span data-step-count=1></span>
+          <header>
+            <h1 class="aligncenter"><strong>Timestamps / Heure Unix</strong></h1>
+          </header>
+          <div style="position: absolute; top: 300px; left: 500px;" class="animate-show" data-step=1>
+            <div><strong>1686822007 -> 2023-06-15 09:40:33 UTC</strong></div>
+          </div>
+        </section>
+
+        <section style="color: white; font-size: 25px;">
+          <span data-step-count=2></span>
+          <header>
+            <h1 class="aligncenter"><strong>Calendriers / Fuseaux horaires</strong></h1>
+          </header>
+          <div style="position: absolute; top: 200px; left: 300px;" class="animate-show" data-step=1>
+            <img src="./static/images/calendrier1.png" />
+          </div>
+          <div style="position: absolute; top: 200px; left: 300px;" class="animate-show" data-step=2>
+            <img src="./static/images/calendrier1-2.png" />
+          </div>
+          <div style="position: absolute; top: 400px; left: 600px;" class="animate-show" data-step=2>
+            <img src="./static/images/calendrier2.png" style="width: 500px;" />
+          </div>
+        </section>
+
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+   <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script src="./webslides-animation.js"></script>
+    <script>
+      window.ws = new WebSlides();
+      new WebSlidesAnimation(window.ws);
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>
